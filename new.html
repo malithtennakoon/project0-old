@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .grid-container-top{
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            .grid-container-top>div{
+                display: inline;
+                /*background-color:rgb(81, 236, 190);*/
+            }
+            .grid-item-2{
+                padding-top: 90px;
+                padding-bottom: 50px;
+            }
+            .grid-item-3{
+                display: grid;
+                grid-template-rows: auto auto auto;
+            }
+            .grid-item{
+                padding: 10px;
+            }
+            .middle{
+                /*background: url(back.jpg) no-repeat center fixed;
+                background-size: cover;*/
+            }
+            .middle>.grid-container{
+                display: grid;
+                box-sizing: border-box;
+                grid-template-columns: auto auto;
+                grid-template-rows: 200px 200px;
+                /*justify-items: center;
+                align-items: center;*/
+            }
+            .middle>.grid-container>.grid-item{
+                box-sizing: border-box;
+                border: solid black;   
+            }
+            img{
+                height: 300px;
+                width: 300px;
+                align-items: center;
+                padding:40px; 
+                float: left;
+            }
+            #profile-info{
+                float:inline-start;
+                padding: 20px;
+            }
+            .bottom{
+                background-color: crimson;
+                text-align: center;
+                font-style: italic;
+                color: white;
+                height:auto;
+            }
+            body{
+                color: white;
+                background: url(back.jpg) no-repeat center fixed;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gride-container-middle">
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="achivements.html">Achivements</a>
+                <a class="navbar-brand" href="#">Photography</a>
+                <a class="navbar-brand" href="#">Badminton</a>
+                <a class="navbar-brand" href="#">University Life</a>
+            </nav>
+        </div>
+        <div class="grid-container-top">
+            <div class="grid-item-1">
+                <img src="propic.jpg">
+            </div>
+            <div class="grid-item-2" id="profile-info">s
+                    <h1> Malith Arjuna Tennakoon </h1>
+                        <p><b>Full Name : </b> Tennakoon Mudiyanselage Malith Arjuna Tennakoon </p>
+                        <p><b>Age : </b> 22 years old </p>
+                        <p><b>Address : </b> 25/18 A Weekakoon Garden,Kandy,Sri Lanka </p>
+                        <p><b>About me : </b> Currently I'm a student and my ambition is to be a project manager in a IT firm.
+                            I play badminton and I'm the caption of my team. 
+                        </p>
+            </div>
+            <div class="grid-item-3">
+                    <div class="grid-item" style="padding-top: 40px; font-weight: bold; font-size: large; ">Social Links</div>
+                    <div class="grid-item" style="padding-top: 10px;">
+                        <a class="btn btn-primary" href="https://www.facebook.com/malitharjuna.tennakoon" role="button" target="_blank" >facebook</a><br>
+                    </div>
+                    <div class="grid-item">
+                        <a class="btn btn-primary" href="https://twitter.com/ArjunaMalith" role="button" target="_blank">twitter</a><br>
+                    </div>
+                    <div class="grid-item">
+                        <a class="btn btn-primary" href="https://www.instagram.com/malith_tennakoon/" role="button" target="_blank">instagram</a>
+                    </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="grid-container " style="align-items: center;justify-items:center;">
+                <div class="gride-item">
+                    <a class="btn btn-outline-light btn-lg" href="achivements.html" role="button" target="_blank" >Achivements</a><br>
+                </div>
+                <div class="gride-item" >
+                    <a class="btn btn-outline-success btn-lg" href="https://www.facebook.com/malitharjuna.tennakoon" role="button" target="_blank">Photography</a><br>
+                </div>
+                <div class="gride-item">
+                    <a class="btn btn-outline-danger btn-lg" href="https://www.facebook.com/malitharjuna.tennakoon" role="button" target="_blank">Badminton
+                    </a><br>
+                </div>
+                <div class="gride-item">
+                    <a class="btn btn-outline-warning btn-lg" href="https://www.facebook.com/malitharjuna.tennakoon" role="button" target="_blank">University Life</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            Visit me any time
+        </div>
+    </body>
+</html>
