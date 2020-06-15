@@ -8,3 +8,11 @@
         font-size: x-large;
     }
 }
+footer{
+    color: white;
+    background-color: darkslategrey;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    bottom: auto;
+}
